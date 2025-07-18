@@ -1,0 +1,69 @@
+/* 4. CSS Básico e Box Model - Crie um arquivo styles.css e vincule-o em
+index.html:
+- Defina cores de fundo (background-color) e de texto (color) para <header>,
+<main> e <footer>.
+- Para cada uma dessas seções, aplique margin, padding e border de forma a
+evidenciar seus contornos. */
+
+/* 5 - Um estilo para todas as tags <h2> que aumente a font-size e aplique text-
+decoration: underline.
+
+- Uma classe .destaque que deixe o texto em itálico (font-style: italic) e aplique
+um leve background-color.
+
+- Um ID #importante que adicione border-top mais espessa em um parágrafo
+específico. */
+
+*{
+   box-sizing: border-box;
+   margin: 0px;
+   border: 0px;
+ }
+ body{
+    background-color: #eee;
+ }
+header {
+    background-color: #000;
+    color: #ccc;
+    padding: 30px;
+    text-align: center;
+}
+h2{
+    font-size: 1.3rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.destaque{
+    font-style: italic;
+    background-color: #eee;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    
+}
+section{
+    color: rgb(110, 7, 101);
+    background-color: #fff;
+    margin: 50px;
+    padding: 30px;
+    border: 1px solid rgb(110, 7, 101) ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #555; 
+}
+footer {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+ #importante{
+  border-top: 2px solid #000;
+  text-align: center;
+  padding-top: 10px;
+ }
